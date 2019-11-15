@@ -10,7 +10,6 @@
 
     <properties>
         <hostUrl>https://www.worldremit.com/en/careers</hostUrl>
-        <browserType>chrome</browserType>
     </properties>
 
     <dependencies>
@@ -48,12 +47,23 @@
 
     <profiles>
         <profile>
-            <id>main-env</id>
+            <id>firefox</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
                 <host>${hostUrl}</host>
+                <browserType>firefox</browserType>
+            </properties>
+        </profile>
+        <profile>
+            <id>chrome</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <host>${hostUrl}</host>
+                <browserType>chrome</browserType>
             </properties>
         </profile>
     </profiles>
