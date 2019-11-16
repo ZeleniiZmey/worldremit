@@ -21,7 +21,7 @@ public class ApplyForGivenPositionTest {
         positionDescriptionPage.fillEmployeeInformation(UsersInfo.RANDOM_USER).clickApplyButton();
 
         //then
-        assertThat(positionDescriptionPage).isErrorMessageDisplayed().haveExactText("Please attach a resume.");
+        assertThat(positionDescriptionPage).hasErrorMessage().haveExactText("Please attach a resume.");
 
     }
 }

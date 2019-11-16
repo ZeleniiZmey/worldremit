@@ -11,8 +11,8 @@ public class PositionDescriptionPageAssert extends AbstractAssert<PositionDescri
         super(actual, PositionDescriptionPageAssert.class);
     }
 
-    public PositionDescriptionPageAssert isErrorMessageDisplayed() {
-        actual.errorMessage.isDisplayed();
+    public PositionDescriptionPageAssert hasErrorMessage() {
+        assertThat(actual.errorMessage.isDisplayed()).isTrue();
         return this;
     }
 

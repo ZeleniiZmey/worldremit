@@ -3,7 +3,6 @@ package com.worldremit.setup;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import com.worldremit.pages.WordRemitStartPage;
-import lombok.AccessLevel;
 import lombok.Getter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -13,7 +12,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.hasWebDriverStarted;
 import static com.worldremit.config.Configuration.CONFIGURATION;
 
-@Getter(AccessLevel.PUBLIC)
+@Getter
 public class UserSessionSetup {
 
     private static final String HOST = CONFIGURATION.getHostUrl();

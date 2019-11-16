@@ -10,7 +10,6 @@ import static com.codeborne.selenide.Selectors.byValue;
 import static com.codeborne.selenide.Selenide.$;
 import static org.openqa.selenium.By.className;
 
-//@Getter(AccessLevel.PACKAGE)
 public class PositionDescriptionPage {
     private SelenideElement contentSection = $(className("job-content-header"));
     private SelenideElement jobAppForm = $(byId("job-app-form"));
